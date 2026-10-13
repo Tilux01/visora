@@ -83,6 +83,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ===== FULLSCREEN SUPPORT FOR THEATER & VR MODE =====
+  const theater = document.querySelector('.cinematic-theater');
+  const expandBtn = document.querySelector('.theater-expand-btn');
+  const enterVrBtn = document.getElementById('enterVrBtn');
+
+  function toggleFullscreen(element) {
+    if (!document.fullscreenElement) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  }
+
+  if (expandBtn && theater) {
+    expandBtn.addEventListener('click', () => toggleFullscreen(theater));
+  }
+
+  if (enterVrBtn && theater) {
+    enterVrBtn.addEventListener('click', () => {
+      theater.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => toggleFullscreen(theater), 400);
+    });
+  }
+
   // ===== TESTIMONIALS SLIDER CONTROLS =====
   const testiArrows = document.querySelectorAll('.testi-arrow-btn');
   const testimonialDeck = document.querySelector('.testimonials-deck');
