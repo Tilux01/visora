@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visora - Feel the Future</title>
+  <meta name="description" content="Visora VR System - Experience the future of immersive reality with intuitive controls, performance, and advanced technology for creative professionals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="Visora Home">
+          <svg class="logo-mark" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="2" y="4" width="20" height="13" rx="4"/>
+            <path d="M7 20h10M12 17v3"/>
+            <circle cx="8" cy="10.5" r="2.2" fill="currentColor"/>
+            <circle cx="16" cy="10.5" r="2.2" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Visora</span>
+        </a>
+
+        <!-- Pill Nav Links -->
+        <div class="nav-pill-container">
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#cinematic" class="nav-link">Services</a></li>
+            <li><a href="#testimonials" class="nav-link">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Nav Action Buttons -->
+        <div class="nav-actions">
+          <button class="nav-icon-btn" id="searchBtn" aria-label="Search">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="7.5"/><path d="M21 21l-4.5-4.5"/>
+            </svg>
+          </button>
+          <button class="nav-icon-btn" id="cartBtn" aria-label="Shopping Bag">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+          </button>
+          <button class="nav-menu-btn" id="menuBtn">
+            <span>Menu</span>
+            <div class="hamburger">
+              <span></span><span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <!-- Huge Header directly on canvas -->
+      <h1 class="hero-big-title">Feel the Future</h1>
+
+      <!-- Dark Rounded Hero Card -->
+      <div class="hero-card">
+        <!-- Top bar inside card -->
+        <div class="hero-card-top">
+          <div class="hero-card-tag">
+            <span class="tag-dot"></span>
+            Experience the Future Today
+          </div>
+          <div class="hero-color-switch">
+            <div class="color-dots-group">
+              <span class="dot-color dot-teal"></span>
+              <span class="dot-color dot-silver active"></span>
+              <span class="dot-color dot-olive"></span>
+            </div>
+            <span class="color-switch-label">Gray Olive</span>
+          </div>
+        </div>
+
+        <!-- 3-Column Content Inside Dark Card -->
+        <div class="hero-card-grid">
+          <!-- Left Column -->
+          <div class="hero-card-left">
+            <h2 class="hero-card-heading">
+              Experience the future of<br/>immersive reality
+            </h2>
+            <p class="hero-card-desc">
+              powered by smart tracking, ultra hd visuals, and real-time feedback for a truly immersive vr experience.
+            </p>
+
+            <div class="hero-card-cta">
+              <a href="#product" class="btn-show-now" id="showNowBtn">
+                <span>Show Now</span>
+                <div class="toggle-pill">
+                  <div class="toggle-knob"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="hero-social-block">
+              <span class="social-caption">(Social Media)</span>
+              <div class="social-pills">
+                <a href="#" class="social-pill" aria-label="Facebook">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="X / Twitter">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="Instagram">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="social-pill" aria-label="LinkedIn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Column: Model with Floating Cards -->
+          <div class="hero-card-center">
+            <div class="hero-model-container">
+              <img src="woman_vr_hero.png" alt="Woman wearing Visora VR headset" class="hero-model-img" />
+
+              <!-- Floating Card 1: Laminated Glass (Top Left) -->
+              <div class="float-badge badge-laminated-glass">
+                <div class="badge-icon-wrap">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="badge-content">
+                  <span class="badge-title">Laminated Glass</span>
+                  <p class="badge-sub">Premium 3D Laminated glass provides ultra-realistic and durable connection.</p>
+                </div>
+              </div>
+
+              <!-- Floating Card 2: Fabric & Foam (Right Middle) -->
+              <div class="float-badge badge-fabric-foam">
+                <div class="badge-icon-wrap">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="badge-content">
+                  <span class="badge-title">Fabric &amp; Foam</span>
+                  <p class="badge-sub">Soft touch fabric and adaptive memory foam afford a custom, pressure-free fit.</p>
+                </div>
+              </div>
+
+              <!-- Floating Card 3: Intelligent Style $1,499 (Bottom Right) -->
+              <div class="float-badge badge-pricing">
+                <img src="vr_headset_white.png" alt="Visora headset thumbnail" class="pricing-thumb" />
+                <div class="pricing-info">
+                  <span class="pricing-title">Intelligent Style</span>
+                  <span class="pricing-subtitle">Crafted to complement your aesthetic</span>
+                  <span class="pricing-amount">$1,499</span>
+                </div>
+                <button class="pricing-action-btn" aria-label="View product details">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Stats -->
+          <div class="hero-card-right">
+            <div class="hero-stats-box">
+              <div class="stat-group">
+                <div class="stat-val">20k<span class="stat-sup">+</span></div>
+                <div class="stat-name">VR headset library</div>
+              </div>
+              <div class="stat-group">
+                <div class="stat-val">100k<span class="stat-sup">+</span></div>
+                <div class="stat-name">Positive reviews</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INNOVATION SECTION ===== -->
+  <section class="innovation-section" id="product">
+    <div class="section-inner">
+      <div class="innovation-header">
+        <h2 class="innovation-heading">We believe innovation starts with clarity.</h2>
+        <p class="innovation-subheading">
+          Our VR system is engineered to push the boundaries of immersive experience, with intuitive controls, performance, and advanced technology for <span class="text-subtle">creative professionals.</span>
+        </p>
+      </div>
+
+      <!-- 3D Headset Showcase Carousel -->
+      <div class="headset-carousel-stage">
+        <button class="carousel-arrow arrow-prev" id="prevBtn" aria-label="Previous slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+
+        <div class="carousel-view">
+          <div class="carousel-slides" id="carouselTrack">
+            <!-- Slide 0: Silver Front/Angle -->
+            <div class="headset-slide active">
+              <img src="vr_headset_white.png" alt="Visora Spatial VR Headset Silver" />
+            </div>
+            <!-- Slide 1: Side View -->
+            <div class="headset-slide">
+              <img src="vr_headset_side_view.png" alt="Visora VR Headset Side Profile" />
+            </div>
+            <!-- Slide 2: Olive Edition -->
+            <div class="headset-slide">
+              <img src="vr_headset_olive.png" alt="Visora VR Headset Olive Military Edition" />
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow arrow-next" id="nextBtn" aria-label="Next slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Color Selector Dots -->
+      <div class="carousel-dots-row">
+        <button class="carousel-dot dot-sel-silver active" data-slide="0" aria-label="Silver"></button>
+        <button class="carousel-dot dot-sel-white" data-slide="1" aria-label="White Side"></button>
+        <button class="carousel-dot dot-sel-olive" data-slide="2" aria-label="Olive Edition"></button>
+      </div>
+
+      <!-- Flight in VR Row -->
+      <div class="flight-showcase-row" id="features">
+        <div class="flight-left">
+          <h3 class="flight-headline">Experience<br/>the Ultimate<br/>Flight in VR</h3>
+        </div>
+        <div class="flight-right">
+          <p class="flight-desc">
+            Step inside the cockpit. Our spatial VR interface allows you to inspect every detail and test fly the drone in a virtual environment before you buy.
+          </p>
+          <button class="btn-dark-pill" id="enterVrBtn">
+            <span>Enter VR Mode</span>
+            <div class="pill-arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CINEMATIC ACTION SECTION ===== -->
+  <section class="cinematic-section" id="cinematic">
+    <div class="cinematic-container">
+      <div class="cinematic-intro">
+        <h2 class="cinematic-title">Experience the Visora in<br/>Full Cinematic Action</h2>
+        <p class="cinematic-desc">
+          Witness the future of flight. Capture breathtaking 360° views with unmatched precision, blurring the line between reality and VR.
+        </p>
+      </div>
+
+      <!-- Main Video Theater Card -->
+      <div class="cinematic-theater">
+        <img src="vr_cinematic_scene.png" alt="Person experiencing Visora in immersive cinematic scene" class="cinematic-hero-img" />
+
+        <!-- Overlay Tag Left -->
+        <div class="theater-tag-left">
+          <span class="theater-dot"></span>
+          Immersive VR Experience
+        </div>
+
+        <!-- Overlay Specs Card Right -->
+        <div class="theater-specs-card">
+          <div class="spec-row">
+            <span class="spec-label">High-Resolution Display</span>
+            <span class="spec-value">4K, 6K, or 8K visual clarity for stunning realism</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Multiple Interaction Modes</span>
+            <span class="spec-value">Gaming, cinematic, and creative exploration environments</span>
+          </div>
+        </div>
+
+        <!-- Glowing Play Button -->
+        <button class="theater-play-btn" id="playBtn" aria-label="Play video experience">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        </button>
+
+        <!-- Bottom Tag -->
+        <div class="theater-tag-bottom">
+          Ready to Enter a New Reality?
+        </div>
+
+        <!-- Fullscreen Button -->
+        <button class="theater-expand-btn" aria-label="Fullscreen view">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        </button>
+      </div>
+
+      <!-- 4 Features Grid Row -->
+      <div class="cinematic-cards-row">
+        <!-- Card 1 -->
+        <div class="cin-feature-card">
+          <div class="cin-card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h4 class="cin-card-title">VR Ready Visuals</h4>
+          <p class="cin-card-desc">Ultra-sharp HDR micro-OLED panels delivering lifelike clarity and zero eye fatigue.</p>
+        </div>
+
+        <!-- Card 2: Headset Thumbnail Card -->
+        <div class="cin-feature-card card-thumbnail">
+          <img src="vr_headset_side_view.png" alt="Headset side preview" class="cin-card-img" />
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cin-feature-card">
+          <div class="cin-card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4 class="cin-card-title">360° Immersion</h4>
+          <p class="cin-card-desc">True spatial awareness with zero-latency perceptual field and dynamic surround sound.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cin-feature-card">
+          <div class="cin-card-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4 class="cin-card-title">Smart Motion Tracking</h4>
+          <p class="cin-card-desc">Sub-millimeter optical sensors tracking 120 FPS natural hand gestures and eye focus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMMERSION SPEC SECTION ===== -->
+  <section class="immersion-section" id="immersion">
+    <div class="section-inner">
+      <div class="immersion-intro">
+        <h2 class="immersion-heading">Experience Immersion<br/>Like Never Before</h2>
+      </div>
+
+      <div class="immersion-stage">
+        <!-- Floating Spec Cards Left -->
+        <div class="immersion-callouts-left">
+          <div class="spec-callout-card">
+            <div class="callout-header">
+              <span class="callout-indicator"></span>
+              <span class="callout-name">Soft Touch Cushioning</span>
+            </div>
+            <p class="callout-detail">Multi-density breathable mesh engineered for all-day balanced wear.</p>
+          </div>
+
+          <div class="spec-callout-card">
+            <div class="callout-header">
+              <span class="callout-indicator"></span>
+              <span class="callout-name">Ultra-Clear Inner Glass</span>
+            </div>
+            <p class="callout-detail">Custom 3P pancake optics with dual motorized IPD adjustment.</p>
+          </div>
+        </div>
+
+        <!-- Center Product Hero -->
+        <div class="immersion-center-product">
+          <img src="vr_headset_white.png" alt="Visora VR Headset Detailed View" class="immersion-main-img" />
+          <div class="product-glow"></div>
+        </div>
+
+        <!-- Floating Spec Cards Right -->
+        <div class="immersion-callouts-right">
+          <div class="spec-callout-card">
+            <div class="callout-header">
+              <span class="callout-indicator"></span>
+              <span class="callout-name">Precision Alloy Frame</span>
+            </div>
+            <p class="callout-detail">Aerospace-grade magnesium-aluminum alloy lightweight chassis.</p>
+          </div>
+
+          <div class="spec-callout-card">
+            <div class="callout-header">
+              <span class="callout-indicator"></span>
+              <span class="callout-name">3D Audio Drivers</span>
+            </div>
+            <p class="callout-detail">Binaural spatial beamforming speakers with active environment isolation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="immersion-cta-center">
+        <button class="btn-dark-pill" id="exploreSpecsBtn">
+          <span>View Detail Specs</span>
+          <div class="pill-arrow-circle">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-inner">
+      <div class="testimonials-intro">
+        <h2 class="testimonials-heading">Happier with Every<br/>After Experiencing Our VR</h2>
+        <p class="testimonials-subtext">
+          Experience lightning-fast changing that saves you time and keeps you ready for your next immersive journey enjoy every moment without the wait.
+        </p>
+      </div>
+
+      <div class="testimonials-deck">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-bubble">
+          <div class="bubble-header">
+            <div class="user-profile">
+              <div class="user-avatar av-leo">LJ</div>
+              <div class="user-meta">
+                <span class="user-name">Leo Johnson</span>
+                <span class="user-role">Tech Reviewer</span>
+              </div>
+            </div>
+            <div class="bubble-quote-icon">“</div>
+          </div>
+          <div class="bubble-rating">★★★★★</div>
+          <p class="bubble-quote">
+            "Using Visora VR has been an incredible experience. Its sleek design, reliable performance, and precise tracking truly stand out. The user interface feels intuitive and seamless. I'm completely satisfied with this purchase, worth every cent."
+          </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-bubble">
+          <div class="bubble-header">
+            <div class="user-profile">
+              <div class="user-avatar av-aiden">AC</div>
+              <div class="user-meta">
+                <span class="user-name">Aiden Clarke</span>
+                <span class="user-role">Digital Artist</span>
+              </div>
+            </div>
+            <div class="bubble-quote-icon">“</div>
+          </div>
+          <div class="bubble-rating">★★★★★</div>
+          <p class="bubble-quote">
+            "Visora provides an unmatched level of realism. The clarity and responsiveness make digital sculpting feel natural and tactile. It has fundamentally elevated our studio workflow and creative pipeline."
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <div class="testimonial-nav-arrows">
+        <button class="testi-arrow-btn" aria-label="Previous testimonial">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="testi-arrow-btn" aria-label="Next testimonial">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA & FOOTER SECTION ===== -->
+  <section class="final-cta-section" id="cta">
+    <div class="final-cta-container">
+      <div class="final-cta-box">
+        <div class="cta-pill-toggle">
+          <span>Get Started</span>
+          <div class="cta-mini-knob"></div>
+        </div>
+
+        <h2 class="final-cta-title">Experience The Future Today</h2>
+        <p class="final-cta-sub">
+          Step into virtual reality where boundaries fade and possibilities are endless.<br/>Transform how everyday reality feels and interacts.
+        </p>
+
+        <a href="#order" class="btn-order-white" id="ctaOrderBtn">
+          <span>Order Now</span>
+          <div class="pill-arrow-circle dark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </a>
+
+        <!-- Footer Inside Container -->
+        <footer class="integrated-footer">
+          <div class="footer-grid">
+            <div class="footer-brand-pane">
+              <div class="footer-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <rect x="2" y="4" width="20" height="13" rx="4"/>
+                  <path d="M7 20h10M12 17v3"/>
+                </svg>
+                <span>Visora</span>
+              </div>
+              <p class="footer-bio">The vision, powers, and bold ideas that drive the frontier of immersive reality forward.</p>
+              <a href="#" class="footer-link-arrow">Learn More →</a>
+            </div>
+
+            <div class="footer-column">
+              <h5 class="footer-col-head">Address</h5>
+              <ul>
+                <li>24 Visora Tech Park</li>
+                <li>Silicon Valley, CA</li>
+                <li>94025, USA</li>
+                <li>+1 800 VIS ORA</li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h5 class="footer-col-head">Navigation</h5>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cinematic">Services</a></li>
+                <li><a href="#testimonials">Support</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h5 class="footer-col-head">About us</h5>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Partners</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h5 class="footer-col-head">Resources</h5>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-legal">
+            <span>© 2026 Visora. All rights reserved.</span>
+          </div>
+
+          <!-- Giant Watermark Typography -->
+          <div class="giant-watermark" aria-hidden="true">Visora</div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
